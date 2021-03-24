@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components";
 import PROJECTS from "../../../../projects.json";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard, Project } from "./ProjectCard";
 
 const Container = styled.div`
     width: 380px;
@@ -63,7 +63,7 @@ export const Carousel = () => {
                         {
                             PROJECTS.map((project, index) => 
                                 <div>
-                                    <ProjectCard project={project}/>
+                                    <ProjectCard project={project as Project}/>
                                 </div>
                             )
                         }

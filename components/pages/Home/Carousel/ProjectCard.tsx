@@ -36,7 +36,7 @@ const LANGUAGE_COLORS: { [k:string]: string } = {
     solidity: "#909090	",
 };
 
-type Project = {
+export type Project = {
     name: string, 
     description: string,
     language: Language,
