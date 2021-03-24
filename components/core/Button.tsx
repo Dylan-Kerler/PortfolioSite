@@ -31,13 +31,13 @@ const TextButtonContainer = styled.div`
 `;
 
 const TextUnderline = styled.div`
-    background-color: white;
+    background-color: ${({ color }) => color || "white"};
     height: 2px;
     margin-top: 2px;
     transition: all 0.1s ease-out;
 `;
 
-export const TextButton: React.FC<React.HTMLAttributes<HTMLElement>> = ({ children, ...props }) => {
+export const TextButton: React.FC<React.HTMLAttributes<HTMLElement>> = ({ children, color, ...props }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -48,7 +48,7 @@ export const TextButton: React.FC<React.HTMLAttributes<HTMLElement>> = ({ childr
             >
                 {children}
             </TextButtonContainer>
-            <TextUnderline style={{ width: isHovered ? "100%" : "0%" }}/>
+            <TextUnderline color={color} style={{ width: isHovered ? "100%" : "0%", }}/>
         </div>
     );
 }

@@ -4,6 +4,7 @@ import { Button } from "../../../core/Button";
 import { MainTitle, MinorTitle } from "../../../core/Typography";
 import { Modal, ModalProps } from "../../../core/Modal";
 import { EmailModal } from "./EmailModal";
+import { AboutModal } from "./AboutModal";
 
 const Container = styled.div`
     width: 430px;
@@ -55,6 +56,7 @@ export const Summary = () => {
             </div>
 
             <EmailModal isOpen={showEmail} onClose={() => setShowEmail(false)}/>
+            <AboutModal isOpen={showAbout} onClose={() => setShowAbout(false)}/>
         </Container>
     );
 };
