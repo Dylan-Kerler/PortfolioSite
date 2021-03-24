@@ -6,6 +6,19 @@
         "description": "(2019) Javascript market making bot for Binance to maintain a fixed spread and fixed portfolio exposure for any given period"
     },
     {
+        "language": "rust",
+        "name": "EventEmitterRS",
+        "github": "https://github.com/Dylan-Kerler/event_emitter_rs",
+        "description": "(2020) A lightweight event emitter implementation built in rust"
+    },
+    {
+        "language": "javascript",
+        "name": "CryptoPriceFeeder",
+        "github": "https://github.com/Dylan-Kerler/CryptoFeeder",
+        "website": "https://www.cryptopricefeeder.com/",
+        "description": "(2020) A website to display anomalous trading data amoung cryptocurrency assets - built with React, NodeJS and MongoDB"
+    },
+    {
         "language": "javascript",
         "name": "Eostrex Website",
         "github": "https://github.com/Dylan-Kerler/Eostrex-Site",

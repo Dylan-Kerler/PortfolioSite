@@ -54,9 +54,8 @@ const copyToClipboard = (text: string) => {
     input.select();
     const result = document.execCommand('copy');
     document.body.removeChild(input);
-    console.log("result", result);
     return result;
- }
+};
 
 export const EmailModal = (props: ModalProps) => {
     const [showCopied, setShowCopied] = useState(false);

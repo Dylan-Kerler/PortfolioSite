@@ -85,7 +85,12 @@ export const ProjectCard = ({ project: { name, description, language, github, we
 
                             {
                                 website &&
-                                    <TextButton style={{ marginLeft: 12 }}>Visit Website</TextButton>
+                                    <TextButton 
+                                        onClick={() => window.open(website)} 
+                                        style={{ marginLeft: 12 }}
+                                    >
+                                        Visit Website
+                                    </TextButton>
                             }
                         </div>
                 }

@@ -4,18 +4,16 @@ import { Summary } from "./Summary/Summary"
 
 const Container = styled.div`
     display: grid;
-    padding: 120px;
+    grid-template-columns: 1fr auto;
 
-    #summary {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+    *::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
     }
 
     #carousel {
-        position: absolute;
-        top: 0;
-        right: 120px;
+        margin-right: 120px;
+        position: relative;
     }
 `;
 

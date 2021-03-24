@@ -25,8 +25,6 @@ export const AboutModal = (props: ModalProps) => {
 
     const { textPrimary } = theme.colors;
 
-    console.log("text", textPrimary);
-
     return (
         <Modal {...props}>
             <Container>
@@ -34,7 +32,7 @@ export const AboutModal = (props: ModalProps) => {
 
                 <div style={{ gridColumn: "1/3"}}>
                     I've worked with a huge suite of technologies in various tech stacks. 
-                    A lot of my learning is done by creating projects from scratch, using these different tech stacks, and trying new things out.
+                    I enjoy learning by creating projects from scratch, using these different tech stacks, and trying new things out.
                 </div>
 
                 <div>
