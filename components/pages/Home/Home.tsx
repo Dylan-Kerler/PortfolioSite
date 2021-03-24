@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Carousel } from "./Carousel/Carousel";
-import { Summary } from "./Summary"
+import { Summary } from "./Summary/Summary"
 
 const Container = styled.div`
     display: grid;

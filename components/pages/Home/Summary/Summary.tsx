@@ -1,8 +1,9 @@
 import { useContext, useState } from "react";
 import styled, { ThemeContext } from "styled-components";
-import { Button } from "../../core/Button";
-import { MainTitle, MinorTitle } from "../../core/Typography";
-import { Modal } from "../../core/Modal.tsx";
+import { Button } from "../../../core/Button";
+import { MainTitle, MinorTitle } from "../../../core/Typography";
+import { Modal, ModalProps } from "../../../core/Modal";
+import { EmailModal } from "./EmailModal";
 
 const Container = styled.div`
     width: 430px;
@@ -53,9 +54,7 @@ export const Summary = () => {
                 <Button style={{ gridColumn: "1/3", width: "100%" }}>Interactive Demo</Button>
             </div>
 
-            <Modal isOpen={showEmail} onClose={() => {}}>
-                hello there
-            </Modal>
+            <EmailModal isOpen={showEmail} onClose={() => setShowEmail(false)}/>
         </Container>
     );
 };

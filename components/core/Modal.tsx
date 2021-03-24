@@ -8,25 +8,29 @@ const ModalContainer = styled.div`
     height: 100%;
     background-color: rgba(0,0,0, 0.7);
 
-    > div {
-        background-color: ${({ theme }) => theme.colors.backgroundColor};
+    #modal-content-container {
+        background-color: ${({ theme }) => theme.colors.background};
+        border-radius: 3px;
         padding: 24px;
-        height: fit-content;
-        width: 300px;
+        min-width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 `;
 
-interface Props {
+export interface ModalProps {
     isOpen: boolean,
     onClose: () => void,
-    children: React.ReactNode
+    children?: React.ReactNode
 };
 
-export const Modal = ({ isOpen, onClose, children }: Props) => {
+export const Modal = ({ isOpen, onClose, children }: ModalProps) => {
     return isOpen ?
         ReactDOM.createPortal(
-            <ModalContainer>
-                <div>
+            <ModalContainer onClick={onClose}>
+                <div id={"modal-content-container"} onClick={e => e.stopPropagation()}>
                     {children}
                 </div>
             </ModalContainer>,
