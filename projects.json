@@ -1,0 +1,56 @@
+[
+    {
+        "language": "javascript",
+        "name": "Binance-MM-JS",
+        "github": "https://github.com/Dylan-Kerler/Binance-MM-JS",
+        "description": "(2019) Javascript market making bot for Binance to maintain a fixed spread and fixed portfolio exposure for any given period"
+    },
+    {
+        "language": "javascript",
+        "name": "Eostrex Website",
+        "github": "https://github.com/Dylan-Kerler/Eostrex-Site",
+        "description": "(2018) Website for a decentralised exchange, employing structured and organisation-based programming concepts - built with ReactJS, NodeJS, Express, Socket.io and Flux"
+    },
+    {
+        "language": "c++",
+        "name": "Eostrex Smart Contract",
+        "github": "https://github.com/Dylan-Kerler/Eostrex-Smart-Contract",
+        "description": "(2018) Smart contract for on-chain decentralised exchange for eosio.tokens, using C++ and several of the native EOSIO libraries"
+    },
+    {
+        "language": "go",
+        "name": "GoP2PB2B",
+        "github": "https://github.com/Dylan-Kerler/go_p2pb2b",
+        "description": "(2019) Go wrapper around p2pb2b cryptocurrency exchange api endpoints, using cryptography libraries and net/http package"
+    },
+    {
+        "language": "rust",
+        "name": "Rustcoin",
+        "github": "https://github.com/Dylan-Kerler/rustcoin",
+        "description": "(2018) Utxo based cryptocurrency written from scratch using sha256 hashing algorithm and ecdsa signing on secp256k1 elliptic curve, written in Rust"
+    },
+    {
+        "language": "javascript",
+        "name": "Portfolio Website",
+        "github": "https://github.com/Dylan-Kerler/PortfolioWebsite",
+        "description": "(2019) The website you are currently using (yes, this one) , was made with ReactJS, Redux, NodeJS and Express"
+    },
+    {
+        "language": "solidity",
+        "name": "Ethex",
+        "github": "https://github.com/Dylan-Kerler/Ethex",
+        "description": "(2017) On-chain decentralised exchange written in Solidity for Ethereum, using a custom matching engine and efficient programming concepts"
+    },
+    {
+        "language": "rust",
+        "name": "Advent of Code",
+        "github": "https://github.com/Dylan-Kerler/AdventOfCode",
+        "description": "(2019) My solutions to the advent of code 2019 problems, written in Rust; Utilising multi-threading as well as other modern programming paradigms"
+    },
+    {
+        "language": "javascript",
+        "name": "Eoswalletpro",
+        "github": "https://github.com/Dylan-Kerler/eoswalletpro",
+        "description": "(2017) Javascript based native eos wallet for storing eos and eosio.token tokens, built using JQuery"
+    }
+]
