@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import PROJECTS from "../../../../projects.json";
 import { ProjectCard, Project } from "./ProjectCard";
@@ -11,7 +11,7 @@ const Container = styled.div`
     overflow: hidden;
 `;
 
-export const Carousel = () => {
+export const Carousel = ({ selectedLanguage }: { selectedLanguage: string }) => {
     const [offset, setOffset] = useState(0);
     const [updater, setUpdater] = useState<any>(null);
     const containerRefs = useRef<{ [k:number]: HTMLElement | null}>({});
@@ -40,6 +40,8 @@ export const Carousel = () => {
         else startAnimation();
     }, [isHovered]);
 
+    console.log(selectedLanguage !== "all");
+
     return (
         <Container 
             id={"carousel"}
@@ -47,28 +49,47 @@ export const Carousel = () => {
             onMouseLeave={() => setIsHovered(false)} 
         >
             {
-                [0, 1].map(index => 
+                selectedLanguage !== "all" ?
                     <div 
-                        ref={el => containerRefs.current[index] = el}
                         style={{ 
                             display: "grid", 
                             rowGap: 24, 
-                            position: "absolute", 
-                            top: ((offset + containerHeight * index) % containerHeight) - (containerHeight - 1) * index,
-                            padding: 12, 
                             width: "100%", 
-                            left: 0 
                         }}
                     >
                         {
-                            PROJECTS.map((project, index) => 
-                                <div>
-                                    <ProjectCard project={project as Project}/>
-                                </div>
-                            )
+                            PROJECTS
+                                .filter(({ language }) => language === selectedLanguage)
+                                .map((project) => 
+                                    <div>
+                                        <ProjectCard project={project as Project}/>
+                                    </div>
+                                )
                         }
                     </div>
-                )
+                : 
+                    [0, 1].map(index => 
+                        <div 
+                            ref={el => containerRefs.current[index] = el}
+                            style={{ 
+                                display: "grid", 
+                                rowGap: 24, 
+                                position: "absolute", 
+                                top: ((offset + containerHeight * index) % containerHeight) - (containerHeight - 1) * index,
+                                padding: 12, 
+                                width: "100%", 
+                                left: 0 
+                            }}
+                        >
+                            {
+                                PROJECTS.map((project) => 
+                                    <div>
+                                        <ProjectCard project={project as Project}/>
+                                    </div>
+                                )
+                            }
+                        </div>
+                    )
             }
         </Container>
     );
