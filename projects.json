@@ -45,8 +45,8 @@
     {
         "language": "javascript",
         "name": "Portfolio Website",
-        "github": "https://github.com/Dylan-Kerler/PortfolioWebsite",
-        "description": "(2019) The website you are currently using (yes, this one) , was made with ReactJS, Redux, NodeJS and Express"
+        "github": "https://github.com/Dylan-Kerler/PortfolioSite",
+        "description": "(2021) The website you are currently using (yes, this one) , was made with ReactJS, Typescript and NextJS"
     },
     {
         "language": "solidity",
