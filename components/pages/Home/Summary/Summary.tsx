@@ -20,7 +20,6 @@ const Container = styled.div<{ isMinimized: boolean }>`
         row-gap: 6px;  
     }
 
-    margin-left: 120px;
     margin-top: ${({ isMinimized }) => isMinimized ? "0" : "50vh"};
     transform: ${({ isMinimized }) => isMinimized ? "scale(0.7) translateX(-50%)" : "translateY(-50%)"};
 
