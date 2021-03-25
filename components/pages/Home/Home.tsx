@@ -7,20 +7,16 @@ import { Summary } from "./Summary/Summary"
 const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr auto;
-    max-width: 1600px;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    overflow: hidden;
-    left: 50%;
-    transform: translateX(-50%);
 
     *::-webkit-scrollbar {
         width: 0px;
         background: transparent;
     }
 
-    padding: 0px 100px;
+    #carousel {
+        margin-right: 120px;
+        position: relative;
+    }
 `;
 
 const LanguageFilterContainer = styled.div`
