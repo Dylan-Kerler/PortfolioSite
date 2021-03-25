@@ -41,7 +41,7 @@ export const Summary = () => {
     const [isMinimized, setIsMinimized] = useState(false);
 
     return (
-        <div style={{ height: "100vh", overflow: "scroll" }}>
+        <div id={"summary-container"} style={{ height: "100vh", overflow: "scroll", }}>
             <Container isMinimized={isMinimized} id={"summary"}>
                 <div id={"text"}>
                     <MinorTitle style={{ marginBottom: -7 }}>Hello there! I am,</MinorTitle>
