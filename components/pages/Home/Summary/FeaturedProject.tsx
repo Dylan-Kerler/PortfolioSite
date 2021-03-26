@@ -76,8 +76,7 @@ export const FeaturedProject = () => {
                 The smart contracts where written in Vyper. This is because I thought it would be easier to write secure code in a simpler language with
                 fewer features to mess something up. While this was true, the limitations of the language mean't that I had to hand-roll several low level
                 features such as implementing `safeTransfer` functions. Most of the smart contract dev time was not spent writing the contracts but rather testing them.
-                Test after test after test; Once it's deployed to Ethereum you can't do anymore bug fixes so it has to be 100% ready once it's launched. The Waffle testing 
-                framework made this quite a bearable experience in comparison to ~2 years ago where Truffle was the defacto standard. 
+                Test after test after test; Once it's deployed to Ethereum you can't do anymore bug fixes so it has to be 100% ready once it's launched.
             </div>
 
             <MinorTitle>The BizOps</MinorTitle>
