@@ -1,6 +1,13 @@
 [
     {
         "language": "javascript",
+        "name": "Interfinex",
+        "github": "https://github.com/International-Financial-Exchange",
+        "website": "https://interfinex.io",
+        "description": "(2021) A fully fledged DeFi DApp built with NextJS, Typescript, React, MongoDB, NodeJS and Docker - This is my most recent project and showcases my current skillset"
+    },
+    {
+        "language": "javascript",
         "name": "Binance-MM-JS",
         "github": "https://github.com/Dylan-Kerler/Binance-MM-JS",
         "description": "(2019) Javascript market making bot for Binance to maintain a fixed spread and fixed portfolio exposure for any given period"
